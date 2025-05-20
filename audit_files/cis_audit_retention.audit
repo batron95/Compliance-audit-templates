@@ -1,0 +1,13 @@
+
+<check_type: "Windows">
+
+<custom_item>
+type: REG_CHECK
+description: "CIS - Ensure audit log retention is enabled"
+value_type: POLICY_TEXT
+value_data: 1
+reg_key: HKLM\SYSTEM\CurrentControlSet\Services\Eventlog\Security
+reg_item: Retention
+</custom_item>
+
+</check_type>

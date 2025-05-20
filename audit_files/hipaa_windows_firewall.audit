@@ -1,0 +1,13 @@
+
+<check_type: "Windows">
+
+<custom_item>
+type: REG_CHECK
+description: "HIPAA - Ensure Windows Firewall is enabled"
+value_type: POLICY_BOOL
+value_data: YES
+reg_key: HKLM\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\StandardProfile
+reg_item: EnableFirewall
+</custom_item>
+
+</check_type>
